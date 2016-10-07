@@ -1,0 +1,181 @@
+/**
+ * master.scss
+ *
+ * Top level stylesheet
+ *
+ */
+
+// Overwrite the default from font-awesome
+$fa-font-path: "./fonts";
+
+//=========
+// Imports
+//=========
+
+@import "bootstrap";
+@import "font-awesome";
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+h1 {
+  position: relative;
+  margin-top: 0px;
+}
+
+//Main Screen Menu Styling
+#button_background {
+    height: 30em;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#welcome {
+    padding-top: 75px;
+    padding-bottom: 60px;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#button_descrip {
+    color: white;
+    font-size: 3em;
+    padding-bottom: 5px;
+}
+
+button.home {
+    background-color: #ff3d3d;
+    border: 4px solid #bf2b2b;
+    color: white;
+    padding: 18px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px 75px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.50);
+    transition-duration: 0.4s;
+}
+
+button.home:hover {
+  background-color: #fc5050;
+  color: white;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.login_student {
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+div.login_student.show{
+  opacity: 1;
+  background: #cccccc;
+  max-height: 300px;
+}
+
+div.login_tutor {
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+div.login_tutor.show{
+  opacity: 1;
+  background: #cccccc;
+  max-height: 300px;
+}
+
+#tutor_classes{
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  width: 75% !important;
+}
+
+.btn-group {
+  margin-bottom: 10px;
+}
+
+button.submit {
+    background-color: #23d620;
+    border: 2px solid white;
+    color: white;
+    width: 14 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition-duration: 0.2s;
+}
+
+button.submit:hover {
+  background-color: #168514;
+  border: 2px solid white;
+  color: white;
+}
+
+//Main Screen Description
+#site_description {
+  height: 500px;
+  background-color: #bf2b2b;
+  padding-left: 30px;
+  padding-top:10px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+//Tutor List Styling
+button.name {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: black;
+}
+
+button.name:hover{
+  color: white;
+}
+
+#table_title {
+  background-color: #cccccc;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+
+#map {
+  width: 100%;
+}
+#container {
+  width: 100%;
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.50);
+}
+
+#cell {
+  background-color: #f1c1c1;
+  border: 4px solid #bf2b2b;
+}
+
+#nest {
+  padding-left: 30px;
+  min-width: 100px;
+}
